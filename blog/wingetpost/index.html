@@ -1,0 +1,25 @@
+<p>要使用WinGet安装软件包，您需要确保您的Windows系统上已经安装了WinGet包管理器。如果您还没有安装WinGet，您可以从Microsoft的官方GitHub仓库下载并安装。
+以下是如何使用WinGet安装软件包的步骤：</p>
+<ol>
+<li>打开命令提示符或PowerShell：
+○ 在Windows搜索中输入cmd（对于命令提示符）或PowerShell（对于PowerShell），然后以管理员身份运行。</li>
+<li>确认WinGet是否已安装：
+在命令提示符或PowerShell中，输入以下命令：</li>
+</ol>
+<pre class="language-diff-js" tabindex="0"><code class="language-diff-js">winget --version</code></pre>
+<p>如果WinGet已安装，您将看到版本信息。如果没有安装，您需要按照官方指南进行安装。
+3. 搜索软件包（可选）：
+在安装软件包之前，您可能想要搜索WinGet仓库中是否有您想要的软件包。使用以下命令：</p>
+<pre class="language-diff-js" tabindex="0"><code class="language-diff-js">winget search &lt;包名></code></pre>
+<p>将&lt;包名&gt;替换为您要搜索的软件包名称。
+4. 安装软件包：
+使用以下命令安装软件包：</p>
+<pre class="language-diff-js" tabindex="0"><code class="language-diff-js">winget install &lt;包名></code></pre>
+<p>将&lt;包名&gt;替换为您要安装的软件包的确切名称。请注意，软件包名称可能是区分大小写的，因此请确保输入正确。
+5. 等待安装完成：
+WinGet将自动下载并安装软件包。安装过程可能需要一些时间，具体取决于软件包的大小和您的系统性能。
+6. 验证安装：
+安装完成后，您可以打开已安装的软件来验证它是否已成功安装。
+请注意，由于WinGet是一个相对较新的工具，某些软件包可能尚未在WinGet仓库中可用。如果找不到您想要的软件包，您可能需要查看该软件的官方网站或等待它被添加到WinGet仓库中。
+此外，WinGet还在不断发展和改进中，因此建议定期查看Microsoft的官方文档以获取最新信息和更新。</p>
+<p>也可以前往“https://zhuanlan.zhihu.com/p/659515299”获得详细教程。</p>

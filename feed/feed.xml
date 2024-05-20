@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>Windows package managers</title>
+	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
+	<link href="https://example.com/feed/feed.xml" rel="self"/>
+	<link href="https://example.com/"/>
+	<updated>2024-05-13T00:00:00Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>Your Name Here</name>
+		<email>youremailaddress@example.com</email>
+	</author>
+	
+	<entry>
+		<title>Difference</title>
+		<link href="https://example.com/blog/tenthpost/"/>
+		<updated>2024-05-13T00:00:00Z</updated>
+		<id>https://example.com/blog/tenthpost/</id>
+		<content type="html">&lt;p&gt;Windows包管理器是用于在Windows系统中自动安装、配置、卸载和升级软件包的工具组合。以下是一些Windows包管理器之间的区别：&lt;/p&gt;
+&lt;h3 id=&quot;vcpkg&quot; tabindex=&quot;-1&quot;&gt;vcpkg： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/tenthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;这是一个C++库管理器，用于在Windows、Linux和MacOS上构建和管理本地C++库。vcpkg专注于C++库的集成，提供了一个方便的命令行界面来安装、更新和删除库。&lt;/p&gt;
+&lt;h3 id=&quot;chocolatey&quot; tabindex=&quot;-1&quot;&gt;Chocolatey： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/tenthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Chocolatey是一个Windows的包管理器，类似于Linux中的apt-get或yum。它允许你从命令行界面安装、更新和卸载软件包。Chocolatey主要关注于Windows桌面应用程序和工具，提供了一个强大的包管理系统。&lt;/p&gt;
+&lt;h3 id=&quot;nuget&quot; tabindex=&quot;-1&quot;&gt;NuGet： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/tenthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;NuGet是一个.NET的包管理器，它允许你从命令行、Visual Studio或Visual Studio Code等IDE中安装、更新和删除.NET包。NuGet是.NET生态系统中的一个重要部分，用于管理.NET项目的依赖关系。&lt;/p&gt;
+&lt;h3 id=&quot;winget&quot; tabindex=&quot;-1&quot;&gt;WinGet： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/tenthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;WinGet（也称为Windows Package Manager）是Windows 10和Windows 11的官方包管理器。它提供了一个命令行界面来安装、更新和卸载软件包。WinGet的设计目标是提供一个快速、可靠和安全的方式来管理Windows上的软件包。&lt;/p&gt;
+&lt;h3 id=&quot;scoop&quot; tabindex=&quot;-1&quot;&gt;Scoop： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/tenthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Scoop是另一个Windows的包管理器，它使用PowerShell脚本来安装和管理软件。Scoop的设计目标是提供一个简单、快速和可定制的方式来安装和管理Windows应用程序。&lt;/p&gt;
+&lt;h2 id=&quot;else&quot; tabindex=&quot;-1&quot;&gt;else &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/tenthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;这些包管理器之间的主要区别在于它们的用途、支持的包类型、用户界面以及与其他工具和系统的集成程度。例如，vcpkg专注于C++库的管理，而NuGet则专注于.NET项目。Chocolatey和Scoop提供了更广泛的软件包支持，而WinGet则是Windows的官方包管理器。在选择使用哪个包管理器时，您应该考虑您的具体需求和偏好。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Winget</title>
+		<link href="https://example.com/blog/firstpost/"/>
+		<updated>2024-05-12T00:00:00Z</updated>
+		<id>https://example.com/blog/firstpost/</id>
+		<content type="html">&lt;p&gt;WinGet是微软开发的Windows包管理器，它提供了一个命令行界面（CLI），允许用户自动化地安装、配置、更新和卸载Windows软件包。这个工具旨在简化软件管理过程，使得开发者和系统管理员可以更高效地管理Windows系统上的软件。&lt;/p&gt;
+&lt;h2 id=&quot;how-to-use-winget&quot; tabindex=&quot;-1&quot;&gt;How to use Winget &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;WinGet的基本用法包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装软件包：打开命令提示符（管理员）或PowerShell（以管理员身份运行），然后输入winget install &amp;lt;包名&amp;gt;，例如winget install Notepadplusplus。&lt;/li&gt;
+&lt;li&gt;更新软件包：同样打开命令提示符（管理员）或PowerShell（以管理员身份运行），然后输入winget update &amp;lt;包名&amp;gt;，例如winget update Notepadplusplus。&lt;/li&gt;
+&lt;li&gt;卸载软件包：WinGet本身不提供直接的卸载命令，但用户可以通过控制面板或其他卸载方式进行卸载。&lt;/li&gt;
+&lt;li&gt;查看已安装的软件包列表：输入winget list可以查看已安装的软件包列表。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;else&quot; tabindex=&quot;-1&quot;&gt;Else &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;WinGet还支持查看特定软件包的详细信息，这通常涉及到编辑WinGet的配置文件。同时，用户还可以使用winget --info命令查找WinGet日志文件的目录路径，这对于排查问题或了解软件包的安装和更新过程非常有帮助。&lt;br&gt;
+WinGet作为一个免费的下载管理器，支持多线程下载、断点续传，并且支持HTTP、FTP、BT等多种下载方式。与Scoop等其他包管理器不同，WinGet安装包安装逻辑上与下载安装包安装没有太大差别，因此可以像普通软件一样进行安装和卸载。&lt;br&gt;
+总的来说，WinGet是一个强大的Windows包管理器，它可以帮助用户更高效地管理和维护Windows系统上的软件。&lt;/p&gt;
+&lt;img src=&quot;https://example.com/blog/firstpost/Winget.png&quot;&gt;  
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to download Winget</title>
+		<link href="https://example.com/blog/secondpost/"/>
+		<updated>2024-05-11T00:00:00Z</updated>
+		<id>https://example.com/blog/secondpost/</id>
+		<content type="html">&lt;p&gt;要使用WinGet安装软件包，您需要确保您的Windows系统上已经安装了WinGet包管理器。如果您还没有安装WinGet，您可以从Microsoft的官方GitHub仓库下载并安装。&lt;/p&gt;
+&lt;h2 id=&quot;winget&quot; tabindex=&quot;-1&quot;&gt;以下是如何使用WinGet安装软件包的步骤： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;powershell&quot; tabindex=&quot;-1&quot;&gt;打开命令提示符或PowerShell： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;○ 在Windows搜索中输入cmd（对于命令提示符）或PowerShell（对于PowerShell），然后以管理员身份运行。&lt;/p&gt;
+&lt;h3 id=&quot;winget-1&quot; tabindex=&quot;-1&quot;&gt;确认WinGet是否已安装： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在命令提示符或PowerShell中，输入以下命令：&lt;/p&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;winget --version&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果WinGet已安装，您将看到版本信息。如果没有安装，您需要按照官方指南进行安装。&lt;/p&gt;
+&lt;h3 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;搜索软件包（可选）： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在安装软件包之前，您可能想要搜索WinGet仓库中是否有您想要的软件包。使用以下命令：&lt;/p&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;winget search &amp;lt;包名&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将&amp;lt;包名&amp;gt;替换为您要搜索的软件包名称。&lt;/p&gt;
+&lt;h3 id=&quot;-1&quot; tabindex=&quot;-1&quot;&gt;安装软件包： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;使用以下命令安装软件包：&lt;/p&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;winget install &amp;lt;包名&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将&amp;lt;包名&amp;gt;替换为您要安装的软件包的确切名称。请注意，软件包名称可能是区分大小写的，因此请确保输入正确。&lt;/p&gt;
+&lt;h3 id=&quot;-2&quot; tabindex=&quot;-1&quot;&gt;等待安装完成： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;WinGet将自动下载并安装软件包。安装过程可能需要一些时间，具体取决于软件包的大小和您的系统性能。&lt;/p&gt;
+&lt;h3 id=&quot;-3&quot; tabindex=&quot;-1&quot;&gt;验证安装： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;安装完成后，您可以打开已安装的软件来验证它是否已成功安装。
+请注意，由于WinGet是一个相对较新的工具，某些软件包可能尚未在WinGet仓库中可用。如果找不到您想要的软件包，您可能需要查看该软件的官方网站或等待它被添加到WinGet仓库中。
+此外，WinGet还在不断发展和改进中，因此建议定期查看Microsoft的官方文档以获取最新信息和更新。&lt;/p&gt;
+&lt;h2 id=&quot;-4&quot; tabindex=&quot;-1&quot;&gt;题外话： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;也可以前往“https://zhuanlan.zhihu.com/p/659515299”获得详细教程。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Chocolatey</title>
+		<link href="https://example.com/blog/thirdpost/"/>
+		<updated>2024-05-10T00:00:00Z</updated>
+		<id>https://example.com/blog/thirdpost/</id>
+		<content type="html">&lt;p&gt;Chocolatey，它是一款Windows的包管理器，类似于Linux下的包管理工具apt或yum。Chocolatey旨在为用户提供一种简单、易用且功能强大的方式来安装、更新、卸载和管理Windows下的软件和工具。&lt;/p&gt;
+&lt;h2 id=&quot;advantage&quot; tabindex=&quot;-1&quot;&gt;Advantage &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;命令行操作：用户可以通过命令行界面来搜索、安装、更新和卸载软件包，无需手动下载和安装每个软件。&lt;/li&gt;
+&lt;li&gt;自动化：Chocolatey支持脚本和自动化，使得在多台电脑上批量安装和配置软件变得更加容易。&lt;/li&gt;
+&lt;li&gt;依赖管理：Chocolatey可以自动处理软件包的依赖关系，确保所有必要的依赖项都已正确安装。&lt;/li&gt;
+&lt;li&gt;团队环境：Chocolatey支持配置统一环境，通过配置文件可以配置一个团队统一的开发环境，确保所有成员都使用相同的软件和版本。&lt;/li&gt;
+&lt;li&gt;安全性：Chocolatey提供了一个安全的软件源，用户可以从该源下载和安装经过验证的软件包，从而降低了通过不安全来源下载软件的风险。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;else&quot; tabindex=&quot;-1&quot;&gt;Else &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;安装Chocolatey通常涉及在PowerShell中运行一个安装脚本。一旦安装完成，用户就可以使用choco命令来搜索、安装、更新和卸载软件包。
+总的来说，Chocolatey是一个强大的Windows包管理器，可以帮助用户更加高效和自动化地管理软件，节省时间和精力。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to download Chocolatey</title>
+		<link href="https://example.com/blog/fourthpost/"/>
+		<updated>2024-05-09T00:00:00Z</updated>
+		<id>https://example.com/blog/fourthpost/</id>
+		<content type="html">&lt;p&gt;Chocolatey 是一个 Windows 下的包管理器，它允许用户通过命令行来搜索、安装、更新和卸载软件包。Chocolatey 的设计理念类似于 Linux 系统中的 apt-get 或 yum，旨在提供一个更加高效和自动化的方式来管理 Windows 上的软件。
+以下是关于 Chocolatey 的一些基本用法：&lt;/p&gt;
+&lt;h2 id=&quot;chocolatey&quot; tabindex=&quot;-1&quot;&gt;安装 Chocolatey &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 PowerShell：以管理员身份打开 PowerShell。&lt;/li&gt;
+&lt;li&gt;运行安装命令：在 PowerShell 中输入以下命令并按 Enter 键来安装 Chocolatey。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;@&quot;%SystemRoot%&#92;System32&#92;WindowsPowerShell&#92;v1.0&#92;powershell.exe&quot; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &quot;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot; &amp;amp;&amp;amp; SET &quot;PATH=%PATH%;%ALLUSERSPROFILE%&#92;chocolatey&#92;bin&quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个命令会从 Chocolatey 的官方网站下载并运行安装脚本。&lt;/p&gt;
+&lt;h2 id=&quot;chocolatey-1&quot; tabindex=&quot;-1&quot;&gt;使用 Chocolatey 安装软件包 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;搜索软件包：使用 choco search 命令来搜索软件包。例如，要搜索 Notepad++，可以输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;choco search notepad++&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;安装软件包：使用 choco install 命令来安装软件包。例如，要安装 Notepad++，可以输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;choco install notepadplusplus&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Chocolatey 会自动下载并安装软件包及其依赖项。&lt;/p&gt;
+&lt;h2 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;更新和卸载软件包 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;● 更新软件包：使用 choco upgrade 命令来更新已安装的软件包。例如，要更新 Notepad++，可以输入：&lt;/p&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;choco upgrade notepadplusplus&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;● 卸载软件包：使用 choco uninstall 命令来卸载软件包。例如，要卸载 Notepad++，可以输入：&lt;/p&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;choco uninstall notepadplusplus&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;chocolatey-2&quot; tabindex=&quot;-1&quot;&gt;配置 Chocolatey &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Chocolatey 还提供了许多配置选项和高级功能，如配置软件源、设置代理、使用配置文件等。这些功能可以通过 Chocolatey 的文档和社区论坛进行深入了解。
+总之，Chocolatey 是一个强大的 Windows 包管理器，可以帮助用户更加高效和自动化地管理软件。通过命令行界面，用户可以轻松地搜索、安装、更新和卸载软件包，从而节省时间和精力。&lt;/p&gt;
+&lt;h2 id=&quot;-1&quot; tabindex=&quot;-1&quot;&gt;题外话 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;如果需要更详细的教程可以前往https://blog.csdn.net/m0_49183941/article/details/107482650。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Scoop</title>
+		<link href="https://example.com/blog/fifthpost/"/>
+		<updated>2024-05-08T00:00:00Z</updated>
+		<id>https://example.com/blog/fifthpost/</id>
+		<content type="html">&lt;p&gt;Scoop是Windows的命令行安装程序，也是一个强大的包管理工具。它可以在GitHub上找到相关项目的信息。Scoop的诞生省去了繁琐的“搜索-下载-安装”步骤，使得用户能够通过“一行代码”急速安装所需的软件包。&lt;/p&gt;
+&lt;h2 id=&quot;advantage&quot; tabindex=&quot;-1&quot;&gt;Advantage &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fifthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;集成搜索、下载、安装和更新：Scoop不仅可以帮助用户搜索和下载软件包，还可以自动安装和更新这些软件包。这极大地降低了安装和维护软件的成本。&lt;/li&gt;
+&lt;li&gt;干净安装：Scoop将软件安装在用户的文件夹下，这样既不会污染系统路径，也不会请求不必要的权限（UAC）。&lt;/li&gt;
+&lt;li&gt;卸载彻底：在卸载软件时，Scoop能够尽量清空软件在电脑上存储的任何数据和痕迹。&lt;/li&gt;
+&lt;li&gt;适合开发者：Scoop特别适合为开发者配置开发环境，因为它支持安装各种开源和小巧的软件包。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;else&quot; tabindex=&quot;-1&quot;&gt;Else &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fifthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;要使用Scoop安装软件包，你需要先安装Scoop本身。安装条件包括Windows 7以上64位系统和PowerShell 3以上版本。安装完成后，你可以使用scoop search &lt;package-name&gt;命令来搜索软件包，使用scoop install &lt;package-name&gt;命令来安装软件包，使用scoop update &lt;package-name&gt;命令来更新软件包，以及使用scoop uninstall &lt;package-name&gt;命令来卸载软件包。
+请注意，由于Scoop是一个开源项目，因此它可能不包含所有你需要的软件包。如果你找不到你需要的软件包，你可以考虑向Scoop的社区请求添加该软件包，或者寻找其他适合你的包管理器。&lt;/package-name&gt;&lt;/package-name&gt;&lt;/package-name&gt;&lt;/package-name&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to download Scoop</title>
+		<link href="https://example.com/blog/sixthpost/"/>
+		<updated>2024-05-07T00:00:00Z</updated>
+		<id>https://example.com/blog/sixthpost/</id>
+		<content type="html">&lt;h2 id=&quot;scoop&quot; tabindex=&quot;-1&quot;&gt;要安装Scoop，你需要遵循以下步骤： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;scoop-windows-7-64-powershell-3-psversiontable-psversion-powershell-powershell&quot; tabindex=&quot;-1&quot;&gt;确保你的系统满足安装条件：Scoop需要Windows 7以上64位系统以及PowerShell 3以上版本。你可以通过输入$PSVersionTable.PSVersion在PowerShell中查看你的PowerShell版本。 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;scoop-internet-powershell-powershell&quot; tabindex=&quot;-1&quot;&gt;更改脚本执行策略：由于Scoop的安装脚本需要从Internet下载，你需要确保你的PowerShell具有执行远程脚本的权限。在PowerShell中输入以下命令来更改脚本执行策略： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个命令将当前用户的执行策略设置为RemoteSigned，允许运行本地脚本和已签名的远程脚本。&lt;/p&gt;
+&lt;h3 id=&quot;scoop-d-scoop&quot; tabindex=&quot;-1&quot;&gt;设置环境变量：Scoop需要一个安装目录。你可以通过以下命令来设置环境变量并指定安装目录（这里以D:&#92;Scoop为例）： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;$env:SCOOP=&#39;D:&#92;Scoop&#39;  
+[Environment]::SetEnvironmentVariable(&#39;SCOOP&#39;,$env:SCOOP,&#39;User&#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意，这里设置的环境变量第三个参数&#39;User&#39;表示用户级别，&#39;Machine&#39;表示系统级别。如果你没有足够的权限设置系统级别的环境变量，可以手动在环境变量设置中完成。&lt;/p&gt;
+&lt;h3 id=&quot;scoop-scoop&quot; tabindex=&quot;-1&quot;&gt;下载并安装Scoop：最后，使用以下命令下载Scoop的安装脚本并执行安装： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;完成以上步骤后，Scoop应该已经成功安装在你的系统中。你可以通过输入scoop help来查看Scoop的帮助文档，了解如何使用Scoop来搜索、安装、更新和卸载软件包。&lt;/p&gt;
+&lt;h2 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;题外话 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/sixthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;如果需要更详细的步骤可以前往：https://blog.csdn.net/sinshine86/article/details/126786780。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>nuget</title>
+		<link href="https://example.com/blog/seventhpost/"/>
+		<updated>2024-05-06T00:00:00Z</updated>
+		<id>https://example.com/blog/seventhpost/</id>
+		<content type="html">&lt;p&gt;NuGet是一个自由开源的软件包管理系统，专门用于Microsoft开发平台。它最初被称为NuPack，但随后更名为NuGet。NuGet作为Visual Studio的扩展，能够极大地简化在Visual Studio项目中添加、更新和删除库（这些库被部署为程序包）的操作。&lt;/p&gt;
+&lt;h2 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;使用方面 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/seventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;NuGet包通常被打包成单个ZIP文件，文件扩展名为.nupkg，使用开放打包约定（OPC）格式。这些包包含编译代码（Dll）、与该代码相关的其他文件以及描述性清单（包含包版本号等信息）。&lt;/p&gt;
+&lt;p&gt;NuGet不仅是一个包管理平台，还是.NET平台的包管理工具。它提供了一系列客户端用于生成、上传和使用包，以及一个用于存储所有包的中心库，即NuGet Gallery。此外，如果有需要，开发者也可以搭建自己的私有NuGet库。&lt;/p&gt;
+&lt;p&gt;NuGet的使用方式非常灵活。创建者可以生成有用的NuGet包并将其发布到主机，而使用者则可以在可访问的主机上搜索有用且兼容的包，下载包并将其包含在项目中。一旦包被安装在项目中，其API就可以被项目中的其他代码所使用。&lt;/p&gt;
+&lt;h2 id=&quot;else&quot; tabindex=&quot;-1&quot;&gt;Else &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/seventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;NuGet还支持管理项目的依赖关系。它可以帮助开发者跟踪和还原项目所依赖的包，包括顶层和下层的依赖关系。这使得开发者可以更加轻松地管理他们的项目，而无需担心复杂的依赖关系问题。&lt;/p&gt;
+&lt;p&gt;此外，由于NuGet支持公用和专用主机，因此开发者可以使用NuGet包来共享组织或工作组专用的代码。这使得代码共享变得更加容易和灵活。&lt;/p&gt;
+&lt;p&gt;总的来说，NuGet是一个强大而灵活的工具，它可以帮助.NET开发者更加高效地管理他们的项目和依赖关系。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to download nuget</title>
+		<link href="https://example.com/blog/ninthpost/"/>
+		<updated>2024-05-05T00:00:00Z</updated>
+		<id>https://example.com/blog/ninthpost/</id>
+		<content type="html">&lt;p&gt;安装NuGet有多种方法，以下是其中的两种常见方法：&lt;/p&gt;
+&lt;h2 id=&quot;visual-studio-nuget&quot; tabindex=&quot;-1&quot;&gt;方法一：通过Visual Studio安装NuGet &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/ninthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;打开Visual Studio，选择“扩展”-&amp;gt;“管理扩展”。
+在弹出的“扩展和更新”窗口中，选择“联机”选项卡，并在搜索框中输入“NuGet”。
+在搜索结果中找到“NuGet Package Manager”并点击下载。
+下载完成后，按照提示进行安装。安装完成后，重启Visual Studio。&lt;/p&gt;
+&lt;h2 id=&quot;nuget&quot; tabindex=&quot;-1&quot;&gt;方法二：直接下载并安装NuGet &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/ninthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;访问NuGet的官方网站（https://www.nuget.org/），在页面上找到并点击“Install NuGet”按钮，下载Vsix文件。
+双击下载的Vsix文件，按照提示进行安装。安装过程中可能需要你同意一些条款和条件。
+安装完成后，重启Visual Studio。
+请注意，如果你的Visual Studio版本是MVC3以上版本，NuGet可能已经自动安装在你的系统中了。&lt;/p&gt;
+&lt;p&gt;以上两种方法都可以帮助你成功安装NuGet。安装完成后，你就可以在Visual Studio中使用NuGet来管理你的项目和依赖项了。&lt;/p&gt;
+&lt;h2 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;题外话： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/ninthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;如果需要更详细的教程，可以前往：https://learn.microsoft.com/zh-cn/nuget/install-nuget-client-tools?tabs=windows。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Vcpkg</title>
+		<link href="https://example.com/blog/eighthpost/"/>
+		<updated>2024-05-04T00:00:00Z</updated>
+		<id>https://example.com/blog/eighthpost/</id>
+		<content type="html">&lt;p&gt;VCPKG是微软C++团队开发的适用于C和C++库的跨平台开源软件包管理器。它大大简化了Windows、Linux和macOS上第三方库相关的下载和配置操作，目前已有超过1600个第三方库可以通过vcpkg来安装。&lt;/p&gt;
+&lt;h2 id=&quot;vcpkg&quot; tabindex=&quot;-1&quot;&gt;VCPKG的优势包括： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eighthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;1.自动下载开源库源代码。
+2.一键安装第三方库。
+3.源码包的缓存管理和版本管理，可以依需求安装指定的版本。
+4.自动检查库的依赖关系并安装其依赖项。
+5.无缝集成Visual Studio，不用手动设置任何的库相关的路径。
+6.Visual Studio全平台支持，不仅支持Debug/Release、x86/x64编译，还支持UWP、ARM平台的编译。
+VCPKG是一个开源项目，有很多贡献者，通过vcpkg团队及贡献者共同的努力，vcpkg得以快速发展。&lt;/p&gt;
+&lt;h2 id=&quot;vcpkg-1&quot; tabindex=&quot;-1&quot;&gt;以下是一些基本的vcpkg用法： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eighthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;1.安装vcpkg：在官方GitHub仓库（https://github.com/microsoft/vcpkg）并按照官方文档上的说明进行安装。
+2.集成vcpkg到项目：在项目的根目录下打开命令行或终端窗口，运行vcpkg integrate install命令，将vcpkg集成到项目中。
+3.查找和安装库：使用vcpkg search命令可以查找可用的库。例如，vcpkg search boost可以查找与Boost相关的库。使用vcpkg install命令可以安装指定的库。
+4.导入库：在项目的CMakeLists.txt或者其他构建文件中，使用find_package命令导入已安装的库。例如，find_package(Boost REQUIRED)。
+5.使用库：在项目代码中，可以像使用其他C++库一样使用vcpkg安装的库。
+以上信息仅供参考，如需了解更多关于vcpkg的信息，建议访问其官方GitHub仓库或查阅相关文档。&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How to download nuget Vcpkg</title>
+		<link href="https://example.com/blog/eleventhpost/"/>
+		<updated>2024-05-03T00:00:00Z</updated>
+		<id>https://example.com/blog/eleventhpost/</id>
+		<content type="html">&lt;h2 id=&quot;vcpkg&quot; tabindex=&quot;-1&quot;&gt;安装vcpkg的步骤如下： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;vcpkg-1&quot; tabindex=&quot;-1&quot;&gt;下载vcpkg： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;使用git命令下载：在命令行窗口（cmd）中输入git clone https://github.com/microsoft/vcpkg.git，这将会在你的当前目录下创建一个名为vcpkg的文件夹，其中包含了vcpkg的源代码。
+如果你的电脑没有安装git，你也可以直接从GitHub上下载vcpkg的压缩包，并解压到指定的目录。&lt;/p&gt;
+&lt;h3 id=&quot;&quot; tabindex=&quot;-1&quot;&gt;设置环境变量： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;将下载的vcpkg目录添加到系统的PATH环境变量中。这样，你就可以在命令行中直接运行vcpkg的命令了。具体步骤是：右键点击“此电脑”-&amp;gt;“属性”-&amp;gt;“高级系统设置”-&amp;gt;“环境变量”，然后在“系统变量”中找到“Path”变量，双击编辑，将vcpkg的目录添加进去。&lt;/p&gt;
+&lt;h3 id=&quot;bootstrap&quot; tabindex=&quot;-1&quot;&gt;运行bootstrap脚本： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;打开命令行窗口，并导航到vcpkg的目录（例如，使用cd命令）。
+运行bootstrap-vcpkg.bat脚本来编译并生成vcpkg的可执行文件（如果下载的是压缩包，可能需要先解压）。这个脚本会下载并安装vcpkg所需的依赖项，并生成vcpkg.exe文件。&lt;/p&gt;
+&lt;h3 id=&quot;visual-studio&quot; tabindex=&quot;-1&quot;&gt;（可选）集成到Visual Studio： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;如果你想将vcpkg与Visual Studio集成，以便在Visual Studio中直接使用vcpkg来管理库，你可以运行vcpkg integrate install命令。这个命令会在你的系统中生成一些配置文件，以便Visual Studio能够识别并使用vcpkg。&lt;/p&gt;
+&lt;h3 id=&quot;vcpkg-2&quot; tabindex=&quot;-1&quot;&gt;使用vcpkg安装库： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;现在，你就可以使用vcpkg来安装你需要的库了。例如，如果你想安装opencv库，你可以运行vcpkg install opencv4:x64-windows命令。这将会下载并安装opencv4的x64版本到Windows平台上。
+请注意，以上步骤是基于Windows系统的安装方法。如果你使用的是其他操作系统（如Linux或macOS），安装步骤可能会有所不同。&lt;/p&gt;
+&lt;h2 id=&quot;-1&quot; tabindex=&quot;-1&quot;&gt;题外话： &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/eleventhpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;如果需要更详细的安装步骤可以前往https://blog.csdn.net/sexyluna/article/details/115285405。&lt;/p&gt;
+</content>
+	</entry>
+</feed>

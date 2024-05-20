@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://example.com/about/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/about-vcpkg/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/how-to-download/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/about-winget/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/about-scoop/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/about-nuget/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/about-chocolatey/</loc>
+		<lastmod>2024-04-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/eleventhpost/</loc>
+		<lastmod>2024-05-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/eighthpost/</loc>
+		<lastmod>2024-05-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/ninthpost/</loc>
+		<lastmod>2024-05-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/seventhpost/</loc>
+		<lastmod>2024-05-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/sixthpost/</loc>
+		<lastmod>2024-05-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/fifthpost/</loc>
+		<lastmod>2024-05-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/fourthpost/</loc>
+		<lastmod>2024-05-09</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/thirdpost/</loc>
+		<lastmod>2024-05-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/secondpost/</loc>
+		<lastmod>2024-05-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/firstpost/</loc>
+		<lastmod>2024-05-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/tenthpost/</loc>
+		<lastmod>2024-05-13</lastmod>
+	</url>
+</urlset>
